@@ -9,13 +9,13 @@ const Navbar = () => {
 
   const navigation = [
     { name: '首頁', href: '/', icon: Wine },
-    { name: '威士忌畫廊', href: '/gallery', icon: BarChart3 },
-    { name: '上傳威士忌', href: '/upload', icon: Upload },
-    { name: '後台管理', href: '/admin', icon: Shield },
+    { name: 'Gallery', href: '/gallery', icon: BarChart3 },
+    { name: '存放威士忌', href: '/upload', icon: Upload },
+    { name: '管理中心', href: '/admin', icon: Shield },
   ]
 
   return (
-    <nav className="bg-dark-800/95 backdrop-blur-md border-b border-dark-700/50 sticky top-0 z-50">
+    <nav className="bg-dark-900/95 backdrop-blur-md border-b border-dark-600/20 sticky top-0 z-50">
       <div className="max-width section-padding">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -46,7 +46,7 @@ const Navbar = () => {
                   className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
                     isActive
                       ? 'bg-gold-500/20 text-gold-400 shadow-lg'
-                      : 'text-gray-300 hover:text-gold-400 hover:bg-dark-700/50'
+                      : 'text-gray-300 hover:text-gold-400 hover:bg-dark-800/50'
                   }`}
                 >
                   <Icon className="w-4 h-4" />
@@ -73,7 +73,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-dark-700/50 mt-2 pt-2"
+            className="md:hidden border-t border-[#333333]/20 mt-2 pt-2"
           >
             <div className="space-y-1">
               {navigation.map((item) => {
@@ -87,7 +87,7 @@ const Navbar = () => {
                     className={`flex items-center space-x-3 px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
                       isActive
                         ? 'bg-gold-500/20 text-gold-400'
-                        : 'text-gray-300 hover:text-gold-400 hover:bg-dark-700/50'
+                        : 'text-gray-300 hover:text-gold-400 hover:bg-dark-800/50'
                     }`}
                   >
                     <Icon className="w-5 h-5" />

@@ -185,7 +185,7 @@ class BlockchainService {
     }
   }
 
-  async mintNFT(whiskeyId: string, metadata: any): Promise<string | null> {
+  async mintNFT(_whiskeyId: string, metadata: any): Promise<string | null> {
     try {
       if (!this.contract || !this.signer) {
         toast.error('請先連接錢包')
@@ -211,11 +211,11 @@ class BlockchainService {
       toast.dismiss()
       toast.success('NFT 生成成功！')
       
-      return {
+      return JSON.stringify({
         tokenId: tokenId?.toString(),
         transactionHash: receipt.hash,
         blockNumber: receipt.blockNumber
-      }
+      })
     } catch (error: any) {
       toast.dismiss()
       console.error('NFT mint error:', error)
@@ -230,7 +230,7 @@ class BlockchainService {
     }
   }
 
-  async uploadToIPFS(metadata: any): Promise<string> {
+  async uploadToIPFS(_metadata: any): Promise<string> {
     // This is a simplified implementation
     // In production, you would use a proper IPFS service like Pinata or IPFS HTTP API
     

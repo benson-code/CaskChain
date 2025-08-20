@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { toast } from 'react-hot-toast'
 
 const NFTCertificate = () => {
-  const { id } = useParams()
+  const { id: _id } = useParams()
   const [copied, setCopied] = useState(false)
 
   // Mock NFT data

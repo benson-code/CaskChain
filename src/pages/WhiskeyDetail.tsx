@@ -4,7 +4,7 @@ import { ArrowLeft, MapPin, Calendar, Star, Shield, Eye, Download, Share2 } from
 import { Link } from 'react-router-dom'
 
 const WhiskeyDetail = () => {
-  const { id } = useParams()
+  const { id: _id } = useParams()
 
   // Mock data - 實際應用中會從API獲取
   const whiskey = {

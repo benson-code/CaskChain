@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Shield, Package, Users, Sparkles, Eye, Edit, Trash2, Plus } from 'lucide-react'
+import { Shield, Package, Users, Sparkles, Eye, Edit, Plus } from 'lucide-react'
 
 const Admin = () => {
   const [activeTab, setActiveTab] = useState('pending')

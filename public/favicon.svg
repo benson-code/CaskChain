@@ -1,0 +1,28 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 金色圓角背景 -->
+  <rect width="32" height="32" rx="8" fill="url(#goldGradient)"/>
+  
+  <!-- 黑色邊框 -->
+  <rect width="32" height="32" rx="8" stroke="#000000" stroke-width="2" fill="none"/>
+  
+  <!-- 威士忌酒杯 -->
+  <g transform="translate(8, 6)">
+    <!-- 杯底 -->
+    <line x1="2" y1="18" x2="14" y2="18" stroke="#000000" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- 杯腳 -->
+    <line x1="8" y1="14" x2="8" y2="18" stroke="#000000" stroke-width="1.5"/>
+    
+    <!-- 杯身 -->
+    <path d="M4 2 L12 2 L11 12 C11 13.1 10.1 14 9 14 L7 14 C5.9 14 5 13.1 5 12 L4 2 Z" 
+          stroke="#000000" stroke-width="1.5" fill="none"/>
+  </g>
+  
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="50%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+  </defs>
+</svg>

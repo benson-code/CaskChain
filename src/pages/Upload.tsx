@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Upload as UploadIcon, Camera, User, MapPin, Calendar, DollarSign, Info, CheckCircle, AlertCircle } from 'lucide-react'
+import { Upload as UploadIcon, Camera, User, Info, CheckCircle, AlertCircle } from 'lucide-react'
 import { toast } from 'react-hot-toast'
 
 interface FormData {
@@ -152,7 +152,6 @@ const Upload = () => {
           <div className="flex justify-center">
             <div className="flex items-center space-x-4">
               {steps.map((step, index) => {
-                const Icon = step.icon
                 const isActive = currentStep === step.number
                 const isCompleted = currentStep > step.number
                 return (

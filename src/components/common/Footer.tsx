@@ -2,7 +2,7 @@ import { Wine, Shield, Globe, Mail } from 'lucide-react'
 
 const Footer = () => {
   return (
-    <footer className="bg-dark-800 border-t border-dark-700/50 mt-16">
+    <footer className="bg-dark-900/95 border-t border-dark-600/20 mt-0 backdrop-blur-md">
       <div className="max-width section-padding py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -12,7 +12,7 @@ const Footer = () => {
                 <Wine className="w-6 h-6 text-dark-900" />
               </div>
               <div>
-                <h3 className="text-xl font-display font-bold gradient-text">
+                <h3 className="text-xl font-bold text-gold-400">
                   CaskChain
                 </h3>
                 <p className="text-sm text-gray-400">威士忌倉儲NFT平台</p>
@@ -25,18 +25,18 @@ const Footer = () => {
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2 text-sm text-gray-400">
                 <Shield className="w-4 h-4 text-gold-400" />
-                <span>區塊鏈保障</span>
+                <span className="text-gray-400">區塊鏈保障</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-gray-400">
                 <Globe className="w-4 h-4 text-gold-400" />
-                <span>全球服務</span>
+                <span className="text-gray-400">全球服務</span>
               </div>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold text-white mb-4">服務項目</h4>
+            <h4 className="font-semibold text-gray-200 mb-4">服務項目</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li className="hover:text-gold-400 cursor-pointer transition-colors">威士忌倉儲</li>
               <li className="hover:text-gold-400 cursor-pointer transition-colors">NFT憑證生成</li>
@@ -48,7 +48,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-white mb-4">聯絡資訊</h4>
+            <h4 className="font-semibold text-gray-200 mb-4">聯絡資訊</h4>
             <div className="space-y-2 text-sm text-gray-400">
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-gold-400" />
@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
             
             <div className="mt-6">
-              <h5 className="font-medium text-white mb-2 text-sm">倉儲地點</h5>
+              <h5 className="font-medium text-gray-200 mb-2 text-sm">倉儲地點</h5>
               <p className="text-xs text-gray-400 leading-relaxed">
                 台北市信義區<br />
                 專業恆溫恆濕倉庫<br />
@@ -74,7 +74,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-dark-700/50 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-sm text-gray-500">
-            © 2024 CaskChain. 版權所有。
+            © 2025 CaskChain. 版權所有。
           </div>
           <div className="flex items-center space-x-6 text-sm text-gray-500">
             <span className="hover:text-gold-400 cursor-pointer transition-colors">隱私政策</span>
