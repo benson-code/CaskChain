@@ -1,0 +1,67 @@
+{
+  "name": "caskchain-backend",
+  "version": "1.0.0",
+  "description": "CaskChain 威士忌倉儲NFT平台後端系統",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "keywords": [
+    "whiskey",
+    "nft",
+    "blockchain",
+    "storage",
+    "typescript",
+    "express"
+  ],
+  "author": "CaskChain Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "multer": "^1.4.5-lts.1",
+    "ethers": "^6.7.0",
+    "axios": "^1.5.0",
+    "winston": "^3.10.0",
+    "express-rate-limit": "^6.9.0",
+    "joi": "^17.9.2",
+    "sharp": "^0.32.5",
+    "ipfs-http-client": "^60.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/cors": "^2.8.13",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^20.5.0",
+    "@types/joi": "^17.2.3",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "jest": "^29.6.2",
+    "@types/jest": "^29.5.4",
+    "ts-jest": "^29.1.1",
+    "supertest": "^6.3.3",
+    "@types/supertest": "^2.0.12",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
